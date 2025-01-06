@@ -24,11 +24,11 @@ const handletoggle  = e =>{
     const Link = 
   
      <>
-        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-4 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-4 text-green-500 ho rounded-xl hover:bg-green-500' } to='/'>Home</NavLink>
-        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-4 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-4 text-green-500 ho rounded-xl hover:bg-green-500' } to='/listed'>Listed Books</NavLink>
-        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-4 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-4 text-green-500 ho rounded-xl hover:bg-green-500' } to='/read'>Pages to Read</NavLink>
-        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-4 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-4 text-green-500 ho rounded-xl hover:bg-green-500' } to='/about'>About</NavLink>
-        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-4 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-4 text-green-500 ho rounded-xl hover:bg-green-500' } to='/contact'>Contract</NavLink>
+        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-2 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-2 text-green-500 ho rounded-xl hover:bg-green-500' } to='/'>Home</NavLink>
+        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-2 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-2 text-green-500 ho rounded-xl hover:bg-green-500' } to='/listed'>Listed Books</NavLink>
+        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-2 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-2 text-green-500 ho rounded-xl hover:bg-green-500' } to='/read'>Pages to Read</NavLink>
+        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-2 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-2 text-green-500 ho rounded-xl hover:bg-green-500' } to='/about'>About</NavLink>
+        <NavLink className={ ({isActive})=> isActive ? 'font-bold text-white border-2 bg-green-500 p-2 rounded-xl text-xl' : 'text-xl border-2 hover:text-white p-2 text-green-500 ho rounded-xl hover:bg-green-500' } to='/contact'>Contract</NavLink>
 
         </>
    

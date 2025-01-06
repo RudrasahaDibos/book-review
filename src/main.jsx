@@ -22,14 +22,13 @@ const router = createBrowserRouter([
         element:<Home></Home>
       },{
         path:'/listed',
-        element:<Listed_Books></Listed_Books>,
-
+        element:<Listed_Books></Listed_Books>
       },
       {
         path:'/read',
         element:<Pagestoread></Pagestoread>
       }
-      
+
     ]
   },
 ]);
