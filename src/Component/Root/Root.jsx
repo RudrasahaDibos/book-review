@@ -7,9 +7,15 @@ import Header from "../Header/Header";
 const Root = () => {
     return (
         <div>
-            <Header></Header>
-            <Outlet></Outlet>
+           <div>
+           <Header></Header>
+           </div>
+          <div className="min-h-[calc(100vh-246px)]">
+          <Outlet></Outlet>
+          </div>
+            <div className="mt-8">
             <Footer></Footer>
+            </div>
         </div>
     );
 };
