@@ -1,5 +1,7 @@
 
 import { useLoaderData, useParams } from "react-router-dom";
+import { SaveBookRead } from "../../Utlis/Localstrage";
+
 
 
 
@@ -7,11 +9,23 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const Listed_Books = () => {
   const books = useLoaderData()
-  const { bookId } = useParams()
-  const intid = parseInt(bookId)
-  console.log(books)
-  const book = books.find((book) => book.bookId === intid)
-  console.log("he", book)
+  const { id } = useParams()
+  const intId = parseInt(id)
+
+  const book = books.find(book => book.id === intId)
+  console.log(book)
+
+  const handleReadBook = ()=>{
+    SaveBookRead(intId)
+  }
+
+  const hadleWishlist = () =>{
+    console.log('Already wishlist Book')
+  }
+
+
+
+
   const { author,
     bookName,
     category, image, publisher, rating,
@@ -19,6 +33,12 @@ const Listed_Books = () => {
     totalPages, yearOfPublishing
 
   } = book
+
+
+
+
+
+
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl max-w-7xl mx-auto mt-6">
@@ -68,11 +88,12 @@ const Listed_Books = () => {
 
 
         <div className="card-actions ">
-          <button className="btn btn-primary">Read</button>
-          <button className="btn btn-secondary">Wishlist</button>
+          <button onClick={handleReadBook} className="btn p-4  hover:bg-green-400">Read</button>
+          <button onClick={hadleWishlist} className="btn p-4 btn-secondary">Wishlist</button>
         </div>
       </div>
     </div>
+
   );
 };
 

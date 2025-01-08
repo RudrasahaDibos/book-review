@@ -4,7 +4,7 @@ import { FaGratipay } from "react-icons/fa6";
 
 const Book = ({ book }) => {
     const { author,
-        bookId, bookName,
+        id, bookName,
         category, image, publisher, rating,
         review, tags,
         totalPages, yearOfPublishing
@@ -12,7 +12,7 @@ const Book = ({ book }) => {
     } = book
    
     return (
-        <Link to={`/listed/${bookId}`} className=" p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900 hover:scale-105 transition hover:border-secondary">
+        <Link to={`/listed/${id}`} className=" p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900 hover:scale-105 transition hover:border-secondary">
         <img src={image} alt="" className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
         <div className="mt-6 mb-2 space-y-2">
             <div className="flex gap-4  ">
